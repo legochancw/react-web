@@ -1,11 +1,14 @@
 ## [Mobility Area]
 
+-- pull from github
+
 gcloud auth configure-docker asia-east2-docker.pkg.dev
 
 docker build -t asia-east2-docker.pkg.dev/mobility-320606/web-repo/react-webapp-dev .
 
 docker push asia-east2-docker.pkg.dev/mobility-320606/web-repo/react-webapp-dev:latest
 
+--k8s force deployment -- kubectl XX -f -deploy
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
